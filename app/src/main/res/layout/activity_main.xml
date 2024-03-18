@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgd"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/layout"
+        android:layout_width="411dp"
+        android:layout_height="48dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="-2dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="2dp"
+        android:background="@drawable/gradient_list"
+        android:fontFamily="@font/alegreya_sans_italic"
+        android:gravity="center"
+        android:text="Standard Body Measurement"
+        android:textColor="#020549"
+        android:textSize="30sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextNumber"
+        android:layout_width="185dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="66dp"
+        android:layout_marginTop="97dp"
+        android:layout_marginEnd="160dp"
+        android:ems="10"
+        android:fontFamily="@font/andika"
+        android:gravity="center"
+        android:hint="Enter Age"
+        android:inputType="number"
+        android:textColor="#052350"
+        android:textColorHint="#0780E8"
+        android:textSize="21sp"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="210dp"
+        android:layout_height="82dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="185dp"
+        android:layout_marginEnd="193dp"
+        android:fontFamily="@font/alegreya_sans_italic"
+        android:gravity="center"
+        android:text="Enter the height"
+        android:textColor="#052350"
+        android:textSize="23sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editTextNumber2"
+        android:layout_width="179dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="274dp"
+        android:layout_marginEnd="208dp"
+        android:textStyle="italic"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Feet"
+        android:inputType="number"
+        android:textColor="#052350"
+        android:textColorHint="#0780E8"
+        android:textSize="23sp" />
+
+    <EditText
+        android:id="@+id/editTextNumber3"
+        android:layout_width="179dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="274dp"
+        android:layout_marginEnd="12dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Inches"
+        android:inputType="number"
+        android:textColor="#052350"
+        android:textColorHint="#0780E8"
+        android:textSize="23sp"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="371dp"
+        android:layout_height="261dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="9dp"
+        android:layout_marginBottom="134dp"
+        android:fontFamily="@font/alegreya_sans_italic"
+        android:gravity="center"
+        android:textColor="#0923AC"
+        android:textColorHint="#2C66FA"
+        android:textSize="28sp"
+        android:textStyle="bold" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/bu"
+        android:layout_width="227dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="88dp"
+        android:layout_marginEnd="96dp"
+        android:layout_marginBottom="55dp"
+        android:background="@drawable/gradient_list"
+        android:font="@font/alegreya_sans_italic"
+        android:fontFamily="@font/andika"
+        android:shadowColor="#AC1212"
+        android:text="View  Details"
+        android:textColor="#0430B6"
+        android:textSize="17sp"
+        android:textStyle="bold|italic" />
+
+    <RadioGroup
+        android:id="@+id/rg"
+        android:layout_width="215dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/tv"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="175dp"
+        android:layout_marginTop="179dp"
+        android:outlineAmbientShadowColor="@color/white"
+        android:outlineSpotShadowColor="#2587EF">
+
+
+        <RadioButton
+            android:id="@+id/Cmbutton"
+            android:layout_width="187dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/alegreya_sans_italic"
+            android:outlineAmbientShadowColor="#5A15F4"
+            android:shadowColor="@color/purple_500"
+            android:text="in centimeter"
+            android:textColor="#0754C6"
+            android:textColorHighlight="#3B71F8"
+            android:textColorHint="#0C45EA"
+            android:textColorLink="#1654F1"
+            android:textSize="20sp"
+            app:useMaterialThemeColors="true" />
+
+        <RadioButton
+            android:id="@+id/feet"
+            android:layout_width="194dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/alegreya_sans_italic"
+            android:outlineAmbientShadowColor="#5A15F4"
+            android:shadowColor="@color/purple_500"
+            android:text="in feet and inches"
+            android:textColor="#0754C6"
+            android:textSize="20sp"
+            app:useMaterialThemeColors="true" />
+
+
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/heightcm"
+        android:layout_width="186dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="276dp"
+        android:layout_marginEnd="156dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Eg. 175"
+        android:inputType="number"
+        android:textColor="#052350"
+        android:textColorHint="#0780E8"
+        android:textSize="23sp"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="83dp"
+        android:layout_height="44dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="290dp"
+        android:layout_marginEnd="65dp"
+        android:text="cm"
+        android:textColor="#111CED"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="119dp"
+        android:layout_height="53dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="212dp"
+        android:layout_marginTop="113dp"
+        android:fontFamily="@font/alegreya_sans_italic"
+        android:text="years    "
+        android:textColor="#052350"
+        android:textSize="25sp" />
+
+</RelativeLayout>
